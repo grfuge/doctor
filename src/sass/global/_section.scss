@@ -1,0 +1,79 @@
+.section {
+  margin-bottom: 80px;
+  br {
+    display: none;
+  }
+  @include screenMedium {
+    display: flex;
+    br {
+      display: block;
+    }
+  }
+  &--title {
+    padding-top: 8px;
+    border-top: 1px solid #333;
+    margin-bottom: 1rem;
+    @include screenMedium {
+      width: 152px;
+      text-align: right;
+      margin-right: 40px;
+    }
+  }
+  &--content {
+    width: 100%;
+    position: relative;
+  }
+  &--button {
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+    display: inline-block;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    text-decoration: none;
+    background: $color-green-highlight;
+    transition: background 100ms;
+    &:hover {
+      background: rgb(202, 238, 202);
+    }
+  }
+  &--link {}
+}
+
+.info {
+  p {
+    font-family: "PT Sans";
+    font-size: 1.1rem;
+    color: #777;
+    padding-right: 40px;
+  }
+  h4 {
+    color: #555;
+    small {
+      color: #555;
+    }
+  }
+}
+
+.table-3 {
+  width: 100%;
+  font-size: 1.02rem;
+  margin-bottom: 1.5rem;
+  padding: 0 32px;
+  tr {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc !important;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    &:first-of-type * {
+      font-family: "PT Sans";
+      color: rgb(121, 160, 118) !important;
+    }
+    &:last-of-type {
+      border: none !important;
+    }
+    td {
+      width: 100%;
+    }
+  }
+}

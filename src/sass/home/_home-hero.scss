@@ -1,0 +1,48 @@
+.home-hero {
+  height: 640px;
+  background: url("../img/fruits-small.jpg") no-repeat;
+  background-position: center calc(100% - 64px);
+  background-size: auto;
+  display: flex;
+  align-items: top;
+  justify-content: flex-start;
+  position: relative;
+  @include screenMedium {
+    background: url("../img/fruits.jpg") no-repeat;
+    height: 576px;
+    align-items: center;
+    background-position: right center;
+  }
+  &--content {
+    padding-bottom: 40px;
+    margin: 56px auto 0 auto;
+    text-align: center;
+    @include screenMedium {
+      text-align: left;
+      margin-top: 0;
+      margin-left: 64px;
+    }
+    @include screenLarge {
+      margin-left: 96px;
+    }
+    h1 {
+      font-size: 1.75rem;
+      font-weight: 400;
+      letter-spacing: 1px;
+    }
+    h2,
+    h2 span {
+      font-family: "PT Sans";
+      font-weight: 400;
+      margin-top: 0.3rem;
+      letter-spacing: 1px;
+    }
+    h2 span {
+      color: $color-orange;
+    }
+    p {
+      max-width: 288px;
+      margin-top: 1.5rem;
+    }
+  }
+}

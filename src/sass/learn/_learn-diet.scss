@@ -1,0 +1,22 @@
+.learn-diet {
+  &--list {
+    width: 100%;
+    &--item {
+      padding: 16px 16px 0 16px;
+      background: #fcfcfc;
+      &:last-of-type p {
+        border: none;
+      }
+      h4 {
+        margin-bottom: 4px;
+      }
+      p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+        margin-bottom: 0;
+        padding-bottom: 16px;
+        border-bottom: 1px solid #ccc;
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+.columns-2 {
+  @include screenMedium {
+    display: flex;
+    justify-content: flex-start;
+  }
+  &--column {
+    width: 100%;
+  }
+  &--half {
+    padding-left: 0;
+    @include screenMedium {
+      width: 50%;
+    }
+  }
+}

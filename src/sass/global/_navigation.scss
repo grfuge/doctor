@@ -1,0 +1,48 @@
+.header-fill {
+  background: #333;
+  position: fixed;
+  height: 44px;
+  width: 100%;
+  z-index: 1000;
+  top: 0;
+}
+
+.header {
+  height: 100%;
+  position: relative;
+  &--logo {
+    height: 100%;
+    display: none;
+    @include screenMedium {
+      display: flex;
+      position: absolute;
+      align-items: center;
+      justify-content: flex-start;
+      align-content: center;
+    }
+    a {
+      text-decoration: none;
+      color: #fff;
+    }
+  }
+  &--navigation {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include screenMedium {
+      justify-content: center;
+    }
+    a {
+      color: hsl(0, 0%, 85%);
+      text-decoration: none;
+      @include screenMedium {
+        margin: 0 16px;
+      }
+    }
+  }
+}
+
+.header-active {
+  color: #fff !important;
+}

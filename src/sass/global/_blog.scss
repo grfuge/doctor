@@ -1,0 +1,140 @@
+.post-preview {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 16px;
+  &:last-of-type {
+    border: none;
+  }
+  a {
+    margin-bottom: 0;
+  }
+  small {
+    display: block;
+    margin-bottom: 8px;
+  }
+}
+
+.post-preview-full {
+  &:nth-last-of-type(2) {
+    border: none;
+  }
+}
+
+.blog-title {
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.pagination {
+  margin-top: 32px;
+  overflow: hidden;
+  a,
+  span {
+    text-decoration: none;
+    font-size: 1.05rem;
+    padding: 16px;
+    @include screenMedium {
+      padding: 2px;
+    }
+  }
+  span {
+    background: $color-green-hover;
+  }
+  a {
+    &:hover {
+      background: $color-green-highlight;
+    }
+  }
+}
+
+.sidebar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  @include screenMedium {
+    width: 256px;
+    padding-right: 40px;
+  }
+  ul,
+  li {
+    padding-left: 0;
+    list-style-type: none;
+    margin-bottom: 0;
+    text-transform: capitalize;
+    &:after {
+      content: '';
+    }
+    ul {
+      display: flex;
+      justify-content: space-between;
+    }
+    li {
+      display: inline-block;
+      position: relative;
+      @include screenMedium {
+        display: block;
+      }
+    }
+    a {
+      text-decoration: none;
+      font-size: 1rem;
+      padding: 16px;
+      background: #eee;
+      @include screenMedium {
+        background: none;
+        padding: 0;
+      }
+    }
+  }
+  &--title {
+    margin-bottom: 8px;
+  }
+  &--list {
+    padding-bottom: 16px;
+    @include screenMedium {
+      padding-bottom: 0;
+    }
+  }
+}
+
+.search-container {
+  display: flex;
+  position: relative;
+  margin-bottom: 16px;
+  @include screenMedium {
+    margin-bottom: 16px;
+  }
+}
+
+.search-input {
+  padding: 0 4px;
+}
+
+.search-button {
+  border: none;
+  display: block;
+  height: 32px;
+  width: 32px;
+  font-size: 1rem;
+  color: #555;
+  background: #e6e6e6;
+  transition: background 100ms;
+  &:hover {
+    cursor: pointer;
+    background: #ddd;
+  }
+}
+
+.blog-return {
+  margin-bottom: 32px;
+  text-decoration: none;
+  background: $color-green-highlight;
+  transition: background 100ms;
+  display: inline-block;
+  &:hover {
+    background: $color-green-hover;
+  }
+  @include screenMedium {
+    margin-top: 16px;
+    margin-bottom: 0;
+  }
+}

@@ -1,0 +1,56 @@
+.learn-stories {
+  h3 {
+    margin-top: 1rem;
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+  .visible {
+    display: block;
+  }
+  &--story {
+    position: relative;
+    @include screenMedium {
+      display: flex;
+    }
+    p {
+      font-size: 1.05rem;
+      padding: 8px 0;
+      margin: 4px 0;
+      @include screenMedium {
+        padding: 0;
+        margin: 0;
+      }
+    }
+    &--title-container {
+      display: flex;
+      justify-content: space-evenly;
+      margin-bottom: 32px;
+      @include screenMedium {
+        padding-right: 32px;
+        display: block;
+        width: 192px;
+        margin-bottom: 0;
+      }
+      div {
+        width: 100%;
+        @include screenMedium {
+          margin-bottom: 16px;
+        }
+      }
+    }
+    &--title {
+      margin-bottom: 0;
+      &:hover {
+        cursor: pointer;
+        background: $color-green-highlight;
+      }
+    }
+    &--content-container {
+      width: 100%;
+    }
+    &--content {
+      display: none;
+    }
+  }
+}

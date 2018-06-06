@@ -1,0 +1,37 @@
+.contact-staff {
+  table {
+    position: relative;
+    border-collapse: collapse;
+    margin: auto;
+    @include screenSmall {
+      width: 100%;
+    }
+    tr {
+      position: relative;
+      margin-top: 16px;
+      display: flex;
+      flex-direction: column;
+      @include screenSmall {
+        margin-top: 0;
+        width: 100%;
+        padding: 4px;
+        display: table-row;
+      }
+      &:first-of-type {
+        display: none;
+        @include screenSmall {
+          display: table-row;
+          border-bottom: 1px solid #ddd;
+        }
+      }
+      td {
+        padding-top: 4px;
+        padding-bottom: 4px;
+        @include screenSmall {
+          padding-top: 8px;
+          padding-bottom: 8px;
+        }
+      }
+    }
+  }
+}
